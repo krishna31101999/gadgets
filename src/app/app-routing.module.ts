@@ -3,13 +3,22 @@ import { Routes, RouterModule } from '@angular/router';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SigninComponent } from './user/signin/signin.component';
+import { UserComponent } from './user/user.component';
+import { CartComponent } from './cart/cart.component';
+
 
 
 
 
 
 const routes: Routes = [
-  {path:'',component:HomeComponent}
+  {path:'',component:HomeComponent},
+  {path:'user',component:UserComponent},
+  {path:'cart',component:CartComponent},
+  {path:'user/signin',component:SigninComponent}
+
+
 ];
 
 @NgModule({
