@@ -1,0 +1,49 @@
+
+.pic2
+{
+    float:right;
+}
+.pictext2
+{
+    color: #1f2e24;
+    text-align: right;
+}
+.pictext21
+{
+    color: #1f2e24;
+    text-align:right;
+}
+.st
+{
+    font-size: 32pt;
+    color: #fd867e;
+}
+.st1
+{
+    font-size: 30pt;
+    color: #d7fb1b;
+}
+.first{
+    width: 100%;
+    background: #141414;
+    padding: 25px 0;
+  }
+  .second p {
+    margin: 0;
+    font-size: 14px;
+    color: #878788;
+  }
+  .second p a{
+    color: #ff5e16;
+  }
+  .third li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .third li:hover a{
+    color: #ff5e16;
+  }
+  .third li a {
+    font-size: 14px;
+    color: #878788;
+  }
