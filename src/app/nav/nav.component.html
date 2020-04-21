@@ -1,29 +1,89 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-      
-<!-- <div class="navbar-header"> -->
-    <a class="navbar-brand" routerLink="">
-        <img src="https://images-platform.99static.com/zjt0iIOAnqzuU3nh6lzAzTL8LoA=/0x0:1361x1361/500x500/top/smart/99designs-contests-attachments/70/70190/attachment_70190498"
-         height="200px" width="200px" style="margin-bottom: 30px; background: transparent;" >
-        
-        </a>
+<div class="container-fluid" style="background-color: black;">
+  <nav class="navbar navbar-expand-lg navbar-static " id="navbar">
+  <!-- <div class="navbar-header"> -->
 
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-            <i class="fa fa-bars"></i>
-        </button>
+    <a class="navbar-brand" routerLink="">
+         <img src="https://static.wixstatic.com/media/9ee9fe_fba0f6399e294d73ba745957254e1f06~mv2.png/v1/fill/w_560,h_248,al_c,lg_1,q_85/Gadget%20Owners%20Logo%20Usable%20(transparent%20-.webp"
+         height="50px" width="100px" style=" background: transparent;" >
+         <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">  <i class="fa fa-bars"></i>
+         </button>
+    </a>
+
+          
 
     <!-- </div> -->
  
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse js-navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
 
           <a class="nav-item nav-link" id="nav-item" routerLink="">Home</a>
-          <a class="nav-item nav-link" id="nav-item" routerLink="">Shop</a>
+
+          <!-- <a class="nav-item nav-link" id="nav-item" routerLink="">Shop</a> -->
+          <ul class="nav navbar-nav">
+
+          <li class="dropdown dropdown-large">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav-item" style="margin-top: 3px;">Shop</a>
+            
+            <ul class="dropdown-menu dropdown-menu-large row">
+              <li class="col-sm-3">
+                <ul>
+                  <a class="nav-item nav-link" id="nav-sub-item"><i class="fa fa-mobile" style="font-size: 23px;"></i>&nbsp;&nbsp;Mobiles</a>
+                  <a class="nav-item nav-link" id="nav-sub-item"><i class="fa fa-laptop"></i>&nbsp;Laptops</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Mobile Accessories</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Computer Accessories</a>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Health Care</li>
+                  <a class="nav-item nav-link" id="nav-sub-item">BP Monitors</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Weighing Scale</a>
+                </ul>
+              </li>
+              <li class="col-sm-3">
+                <ul>
+                  <li class="dropdown-header">Smart Wearable</li>
+                  <a class="nav-item nav-link" id="nav-sub-item">Smart Watches</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Smart Glasses</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Smart Bands</a>
+                  <li class="divider"></li>
+                  <a class="nav-item nav-link" id="nav-sub-item"><i class="fa fa-camera"></i>&nbsp;&nbsp;Camera</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Camera Accessories</a>  
+                  <a class="nav-item nav-link" id="nav-sub-item">Network Components</a>             
+                </ul>
+              </li>
+              
+               <li class="col-sm-3">
+                <ul>
+                  <li class="dropdown-header">Home Gadgets</li>
+                  <a class="nav-item nav-link" id="nav-sub-item"><i class="fa fa-tv"></i>&nbsp;&nbsp;Television</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Air Conditioners</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Electric Kettle</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Microwave Oven</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Cofee Maker</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Refrigirator</a>              
+                </ul>
+              </li>
+              <li class="col-sm-3">
+                <ul>
+                  <li class="dropdown-header">EarPhones</li>
+                  <a class="nav-item nav-link" id="nav-sub-item">EarBuds</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">AirPods</a>
+                  <a class="nav-item nav-link" id="nav-sub-item"><i class="glyphicon glyphicon-headphones"></i>&nbsp;&nbsp;HeadPhones</a>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Speakers</li>
+                  <a class="nav-item nav-link" id="nav-sub-item">Home Theaters</a>
+                  <a class="nav-item nav-link" id="nav-sub-item">Soundbars</a>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </li>
+          </ul>
+          
           <a class="nav-item nav-link" id="nav-item" routerLink="aboutus">AboutUs</a>
           
            
-            <input type="text" placeholder="Search" id="searchbox" size="57">
-            <i class="fa fa-search" style="font-size: 20px; padding-top: 20px; padding-left: 10px; padding-right: 50px;" id="searchicon"></i> 
+            <input type="text" placeholder="Search" id="searchbox" size="60">
+            <i class="fa fa-search" style="font-size: 20px; padding-top: 20px; padding-left: 10px; padding-right: 60px;" id="searchicon"></i> 
 
           <div class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" routerLink="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
@@ -39,4 +99,4 @@
       </div>
     </nav>
   </div>
-  
+  <br><br>
