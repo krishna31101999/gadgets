@@ -1,0 +1,61 @@
+<!-- <div class="container">
+    <div class="card" style="height: 100%; width: 50%;">
+    <img [src]="dis.set[0]">
+    </div>
+      
+
+{{dis.title}}    
+    </div> -->
+
+<!--    
+ <div class="container" style="height: 500px; width: 1000px;" >
+        <ngb-carousel >
+            <ng-template ngbSlide *ngFor="let m of mobiles.set">
+                <div class="embed-responsive embed-responsive-16by9">
+                <img [src]="m[]" class="img-responsive" >
+            </ng-template>
+        
+        </ngb-carousel>
+        </div> -->
+<div class="container-fluid">
+        <div class="col-sm-6" style="height: 500px; width: 500px; background-color: black;  margin-left: 20px;" >
+            <ngb-carousel >
+                <ng-template ngbSlide>
+                    <img [src]="dis.set[0]" class="img-responsive"
+                        >
+                </ng-template>
+                <ng-template ngbSlide>
+            
+                    <img [src]="dis.set[1]" class="img-responsive"
+                    >
+                </ng-template>
+                <ng-template ngbSlide>
+            
+                    <img [src]="dis.set[2]" class="img-responsive"
+                        >
+                </ng-template>
+                <ng-template ngbSlide>
+            
+                    <img [src]="dis.set[3]"class="img-responsive"
+                    >   
+                </ng-template>
+                <ng-template ngbSlide>
+                    <img [src]="dis.set[4]" class="img-responsive"
+                        >
+                </ng-template>
+            
+            </ngb-carousel>
+            </div>
+            <div class="col-sm-6" style="padding-left: 20px;"><br><br>
+                <p style="font-size:x-large;  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{dis.title}}</p>
+          <br>  <p style="font-size: 50px; display: inline;" ><i class="fa fa-inr" aria-hidden="true" ></i>{{dis.price}}</p>
+          <p style="display: inline; text-decoration: line-through; font-size:30px ; padding-left: 20px; color: silver;"><i class="fa fa-inr" aria-hidden="true" ></i>{{dis.mrp}}</p>
+            <p style="font-size: 20px; padding-left: 20px;  display: inline;">({{dis.savings}})</p>
+        <!-- <br><br><br><br> -->
+        <button class="btn btn-success  mr-2" >Buy</button>
+        <button class="btn btn-warning  mb-2" (click)="addItem(dis)">Add to Cart</button>    
+        
+        </div>
+           
+
+        </div>

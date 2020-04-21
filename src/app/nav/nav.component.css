@@ -57,6 +57,7 @@ box-shadow:0px 1px 0px 0px #bc986a;
 
 .dropdown-header{
   color: #428bca;
+  text-align: center;
   font-size: 20px;
 }
 .dropdown-menu-large >  ul  {
@@ -68,7 +69,14 @@ box-shadow:0px 1px 0px 0px #bc986a;
 }
 #nav-sub-item{
   font-size: 15px;
+  color: black;
+  text-align: center;
 }
+
+#nav-sub-item:hover{
+color: cadetblue;
+}
+
 
 @media (max-width: 768px) {
   .dropdown-menu-large {

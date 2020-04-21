@@ -80,8 +80,10 @@ padding-left:2px;
 .text
 {
     text-decoration:none;
+    font-size: 20px;
 }
 #signup
 {
-   padding-left:130px; 
+   align: center;
+   
 }
