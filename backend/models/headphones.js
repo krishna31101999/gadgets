@@ -10,6 +10,6 @@ var headphonesSchema = new Schema({
   savings:String
 });
 
-// var headphone = mongoose.model('headphone', headphonesSchema,'headphone');
+var headphone = mongoose.model('headphone', headphonesSchema,'headphone');
 
-module.exports = mongoose.model('headphone', headphonesSchema,'headphone');
+module.exports = headphone;

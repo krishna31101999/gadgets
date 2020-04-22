@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var tvsSchema = new Schema({
+var televisionsSchema = new Schema({
   url:String,
   title: String,
   set:[],
@@ -10,6 +10,6 @@ var tvsSchema = new Schema({
   savings:String
 });
 
-var tv = mongoose.model('tv', tvsSchema,'tv');
+var television = mongoose.model('television', televisionsSchema,'television');
 
-module.exports = tv;
+module.exports = television;
