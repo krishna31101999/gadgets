@@ -18,6 +18,7 @@ import { LaptopComponent } from './shop/laptop/laptop.component';
 import { TvComponent } from './shop/tv/tv.component';
 import { HeadphonesComponent } from './shop/headphones/headphones.component';
 import { CameraComponent } from './shop/camera/camera.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CameraComponent } from './shop/camera/camera.component';
     LaptopComponent,
     TvComponent,
     HeadphonesComponent,
-    CameraComponent
+    CameraComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
