@@ -10,7 +10,6 @@ var Camera = require('./backend/models/cameras');
 var Tv = require('./backend/models/televisions');
 
 
-/*
 var dbOptions = {
     useCreateIndex: true,
     useNewUrlParser: true,
@@ -26,7 +25,6 @@ var dbOptions = {
     console.log("Error while connecting to DB: " + err);
   });
 
-*/
   
   const app = express()
   app.use(express.static(__dirname + '/dist/gadgets'))
