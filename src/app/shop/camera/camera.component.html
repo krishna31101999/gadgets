@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="container mb-5 " *ngFor="let m of camera;let i=index">
+       <a routerLink="/shop/display" (click)=displaying(i) style="color: black;"> <div class="col-sm-4">
+            <img [src]="m.url"  class="img-responsive">
+        </div>
+        <div class="col-sm-8">
+            <p style="font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{m.title}} </p><br>
+            <p style="font-size: 25px;"><i class="fa fa-inr" aria-hidden="true" ></i>{{m.price}}</p> 
+            <p class="strike" style="font-size: 20px; padding-left: 70px;"><i class="fa fa-inr" aria-hidden="true"></i>{{m.mrp}}</p>
+            <p style="padding-left: 20px; display: inline; font-size: 20px;"> ( {{m.savings}} )</p>
+          
+        </div></a>
+        <br>
+        
+    </div>
+ </div>

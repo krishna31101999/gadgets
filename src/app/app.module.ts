@@ -15,6 +15,9 @@ import { ShopComponent } from './shop/shop.component';
 import { MobileComponent } from './shop/mobile/mobile.component';
 import { DisplayComponent } from './shop/display/display.component';
 import { LaptopComponent } from './shop/laptop/laptop.component';
+import { TvComponent } from './shop/tv/tv.component';
+import { HeadphonesComponent } from './shop/headphones/headphones.component';
+import { CameraComponent } from './shop/camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { LaptopComponent } from './shop/laptop/laptop.component';
     ShopComponent,
     MobileComponent,
     DisplayComponent,
-    LaptopComponent
+    LaptopComponent,
+    TvComponent,
+    HeadphonesComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,

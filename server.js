@@ -5,9 +5,11 @@ var cors = require('cors');
 
 var Mobile = require('./backend/models/mobiles');
 var Laptop = require('./backend/models/laptops');
+var Headphone = require('./backend/models/headphones');
+var Camera = require('./backend/models/cameras');
+var Tv = require('./backend/models/tvs');
 
 
-// ************************ DB Connection ************************
 
 var dbOptions = {
     useCreateIndex: true,
@@ -23,38 +25,17 @@ var dbOptions = {
   mongoose.connection.on('error', function (err) {
     console.log("Error while connecting to DB: " + err);
   });
-  // * DB Connection ************************
-  
-  
+
+
   
   const app = express()
-  
-  
-  
-  
-  
-  
-  
-  // ****** Body Parser **********
   app.use(bodyParser.urlencoded({
     extended: false
   }))
   app.use(bodyParser.json())
   app.use(cors());
-  // * Body Parser ********
-  
-  
-  
-  
-// ****** Body Parser ********
 
 
-
-
-
-// *********************** Backend Routes **********************
-
-// app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/api/mobile', (req, res) => {
     Mobile.find({}, null, {
@@ -86,34 +67,50 @@ app.get('/api/mobile', (req, res) => {
     });
   })
 
+  app.get('/api/headphone', (req, res) => {
+    Headphone.find({}, null, {
+      limit: 30
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/headphones: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  })
 
+  app.get('/api/camera', (req, res) => {
+    Camera.find({}, null, {
+      limit: 30
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/camera: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  })
 
-
-
-
-
-
-
-
-
-// *********************** Backend Routes **********************
-
-
-
-
-
-
-
-
-
-// ******************** Express Server *************************
-
-
-
-
-
-
-
+  app.get('/api/tv', (req, res) => {
+    Tv.find({}, null, {
+      limit: 30
+    }, (err, docs) => {
+      if (err) {
+        console.log('Error while getting movies from DB in /api/tv: ' + err);
+        res.json({
+          error: err
+        });
+      } else {
+        res.json(docs);
+      }
+    });
+  })
 
 
 

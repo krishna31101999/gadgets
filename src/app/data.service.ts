@@ -16,4 +16,16 @@ export class DataService {
    getLaptops(){
      return this.http.get(this.serverUrl + '/laptop')
    }
+   getHeadphones(){
+    return this.http.get(this.serverUrl + '/headphones')
+
+   }
+   getCameras(){
+    return this.http.get(this.serverUrl + '/camera')
+   }
+
+   getTvs(){
+    return this.http.get(this.serverUrl + '/tv')
+
+   }
 }

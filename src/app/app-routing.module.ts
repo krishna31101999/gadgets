@@ -10,6 +10,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { DisplayComponent } from './shop/display/display.component';
 import { MobileComponent } from './shop/mobile/mobile.component';
 import { LaptopComponent } from './shop/laptop/laptop.component';
+import { TvComponent } from './shop/tv/tv.component';
+import { HeadphonesComponent } from './shop/headphones/headphones.component';
+import { CameraComponent } from './shop/camera/camera.component';
+
 
 
 
@@ -27,7 +31,10 @@ const routes: Routes = [
   {path:'user/signin',component:SigninComponent},
   {path:'shop/mobile',component:MobileComponent},
   {path:'shop/display',component:DisplayComponent},
-  {path:'shop/laptop',component:LaptopComponent}
+  {path:'shop/laptop',component:LaptopComponent},
+  {path:'shop/camera',component:CameraComponent},
+  {path:'shop/tv',component:TvComponent},
+  {path:'shop/headphones',component:HeadphonesComponent}
 
 
 ];
