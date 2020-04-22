@@ -7,7 +7,7 @@ var Mobile = require('./backend/models/mobiles');
 var Laptop = require('./backend/models/laptops');
 var Headphone = require('./backend/models/headphones');
 var Camera = require('./backend/models/cameras');
-var Tv = require('./backend/models/tvs');
+var Tv = require('./backend/models/televisions');
 
 
 
