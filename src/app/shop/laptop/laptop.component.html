@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="container mb-5 " *ngFor="let m of laptops;let i=index">
-       <a routerLink="/shop/display" (click)=displaying(i) style="color: black;"> <div class="col-sm-4">
+       <a routerLink="/shop/display" class="nav-item nav-link" (click)=displaying(i) style="color: black;"> <div class="col-sm-4">
             <img [src]="m.url"  class="img-responsive">
         </div>
         <div class="col-sm-8">

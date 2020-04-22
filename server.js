@@ -70,7 +70,7 @@ app.get('/api/mobile', (req, res) => {
     });
   })
 
-  app.get('/api/headphone', (req, res) => {
+  app.get('/api/headphones', (req, res) => {
     Headphone.find({}, null, {
       limit: 30
     }, (err, docs) => {

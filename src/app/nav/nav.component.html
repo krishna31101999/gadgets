@@ -2,10 +2,10 @@
   <nav class="navbar navbar-expand-lg navbar-static " id="navbar">
   <!-- <div class="navbar-header"> -->
 
-    <a class="navbar-brand" routerLink="">
+    <a class="navbar-brand" routerLink="home">
          <img src="https://static.wixstatic.com/media/9ee9fe_fba0f6399e294d73ba745957254e1f06~mv2.png/v1/fill/w_560,h_248,al_c,lg_1,q_85/Gadget%20Owners%20Logo%20Usable%20(transparent%20-.webp"
-         height="50px" width="100px" style=" background: transparent;" >
-         <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">  <i class="fa fa-bars"></i>
+         height="50px" width="100px" style=" background: transparent;position: absolute; left: 0px; top: 0px;" >
+         <button class="navbar-toggle " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" style="color: white;position: absolute; right: 0; top: 0;">  <i class="fa fa-bars" style="font-size: 20px; "></i>
          </button>
     </a>
 
@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse js-navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
 
-          <a class="nav-item nav-link" id="nav-item" routerLink="">Home</a>
+          <a class="nav-item nav-link" id="nav-item" routerLink="home">Home</a>
 
           <!-- <a class="nav-item nav-link" id="nav-item" routerLink="">Shop</a> -->
           <ul class="nav navbar-nav">
@@ -82,13 +82,15 @@
           <a class="nav-item nav-link" id="nav-item" routerLink="aboutus">AboutUs</a>
           
            
-            <input type="text" placeholder="Search" id="searchbox" size="60">
-            <i class="fa fa-search" style="font-size: 20px; padding-top: 20px; padding-left: 10px; padding-right: 60px;" id="searchicon"></i> 
+            <input type="text" placeholder="Search" id="searchbox" size="30">
+          <a href="#" >
+          <i class="fa fa-search" style="font-size: 20px; padding-top: 20px; padding-left: 10px; padding-right: 60px;" id="searchicon"></i> 
+          </a> 
 
           <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
               aria-haspopup="true"  aria-expanded="false"> <i class="fa fa-user"></i> </a>
-            <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-menu ">
               <a class="dropdown-item" routerLink="">Profile</a>
               <a class="dropdown-item" routerLink="">Settings</a>
               <a class="dropdown-item" routerLink="/user/signin">Sign-in</a>

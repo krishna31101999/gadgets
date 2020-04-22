@@ -25,6 +25,7 @@ import { CameraComponent } from './shop/camera/camera.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'user',component:UserComponent},
   {path:'cart',component:CartComponent},
   {path:'aboutus',component:AboutusComponent},
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path:'shop/laptop',component:LaptopComponent},
   {path:'shop/camera',component:CameraComponent},
   {path:'shop/tv',component:TvComponent},
-  {path:'shop/headphones',component:HeadphonesComponent}
+  {path:'shop/headphones',component:HeadphonesComponent},
+  {path:'**',redirectTo:''}
 
 
 ];

@@ -17,4 +17,8 @@ cartItems
 
   }
 
+  removeItem(idx)
+  {
+   this.cart.cartItems.splice(idx,1);
+  }
 }

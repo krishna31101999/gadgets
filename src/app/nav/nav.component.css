@@ -20,8 +20,10 @@ border-color: transparent;
 border-bottom: 1px solid white;
 box-shadow:0px 1px 0px 0px white;
 background:transparent;
-margin-top: 10px;
+/* margin-top: 10px; */
 margin-bottom: 10px;
+color: white;
+font-size: 20px;
 }
 #searchbox:active,#searchbox:focus{
     outline: none;
@@ -34,6 +36,18 @@ box-shadow:0px 1px 0px 0px #bc986a;
 #searchicon:hover{
     color: #bc986a;
 }
+
+.dropdown-item{
+  font-size: 20pt;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+}
+
+.dropdown-item:hover{
+  color: lightseagreen;
+}
+
+
 #navbarDropdownMenuLink{
     padding-right: 60px;
     font-size: 25px;
