@@ -13,6 +13,10 @@ import { LaptopComponent } from './shop/laptop/laptop.component';
 import { TvComponent } from './shop/tv/tv.component';
 import { HeadphonesComponent } from './shop/headphones/headphones.component';
 import { CameraComponent } from './shop/camera/camera.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
+
 
 
 
@@ -36,7 +40,9 @@ const routes: Routes = [
   {path:'shop/camera',component:CameraComponent},
   {path:'shop/tv',component:TvComponent},
   {path:'shop/headphones',component:HeadphonesComponent},
-  {path:'**',redirectTo:''}
+  {path:'sign-in',component:SignInComponent},
+  {path:'sign-up',component:SignUpComponent}
+  // {path:'**',redirectTo:''}
 
 
 ];

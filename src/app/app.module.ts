@@ -19,6 +19,8 @@ import { TvComponent } from './shop/tv/tv.component';
 import { HeadphonesComponent } from './shop/headphones/headphones.component';
 import { CameraComponent } from './shop/camera/camera.component';
 import { FooterComponent } from './footer/footer.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { FooterComponent } from './footer/footer.component';
     TvComponent,
     HeadphonesComponent,
     CameraComponent,
-    FooterComponent
+    FooterComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

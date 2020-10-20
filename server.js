@@ -2,13 +2,14 @@ const express = require('express')
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
+var morgan = require('morgan');
 
 var Mobile = require('./backend/models/mobiles');
 var Laptop = require('./backend/models/laptops');
 var Headphone = require('./backend/models/headphones');
 var Camera = require('./backend/models/cameras');
 var Tv = require('./backend/models/televisions');
-
+var User = require('./backend/models/user')
 
 var dbOptions = {
     useCreateIndex: true,
@@ -115,7 +116,14 @@ app.get('/api/mobile', (req, res) => {
     });
   })
 
-
+app.post('/users',(req,res)=>{
+  var user = new User();
+  user.username = req.body.username;
+  user.email = req.body.email;
+  user.password = req.body.password;
+  user.save();
+ res.send('user created');
+})
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
