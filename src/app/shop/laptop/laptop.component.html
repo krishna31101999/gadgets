@@ -1,18 +1,26 @@
-
 <div class="container">
+
     <div class="container mb-5 " *ngFor="let m of laptops;let i=index">
-       <a routerLink="/shop/display" class="nav-item nav-link" (click)=displaying(i) style="color: black;"> <div class="col-sm-4">
-            <img [src]="m.url"  class="img-responsive">
-        </div>
-        <div class="col-sm-8">
-            <p style="font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{m.title}} </p><br>
-            <p style="font-size: 25px;"><i class="fa fa-inr" aria-hidden="true" ></i>{{m.price}}</p> 
-            <p class="strike" style="font-size: 20px; padding-left: 70px;"><i class="fa fa-inr" aria-hidden="true"></i>{{m.mrp}}</p>
-            <p style="padding-left: 20px; display: inline; font-size: 20px;"> ( {{m.savings}} )</p>
-          
-        </div></a>
+        <a routerLink="/shop/display" (click)=displaying(i) style="color: black;">
+            <div class="row">
+                <div class="mr-5">
+                    <img [src]="m.url" class="img-responsive" >
+                </div>
+                <div class="desc">
+                    <br>
+                    <p style="font-size: 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" data-toggle="tooltip" title="{{m.title}} ">{{ (m.title.length>80) ? (m.title | slice:0:77) + "..." : (m.title)}} </p>
+                    <p style="font-size: 25px;"><i class="fa fa-inr" aria-hidden="true"></i>{{m.price}}</p>
+                    <p class="strike" style="font-size: 20px; padding-left: 50px;"><i class="fa fa-inr"
+                            aria-hidden="true"></i>{{m.mrp}}</p>
+                    <p style="padding-left: 10px; display: inline; font-size: 20px;"> ( {{m.savings}} )</p>
+                </div>
+            </div>
+        </a>
         <br>
-        
+        <hr>
+
     </div>
- </div>
+
+</div>
 <app-footer></app-footer>

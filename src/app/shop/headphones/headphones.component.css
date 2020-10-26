@@ -5,4 +5,14 @@
 .strike{
     text-decoration: line-through;
     display: inline;
+}img{
+    max-height: 200px;
+    max-width: 200px;
+}
+img:hover{
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
 }

@@ -1,13 +1,19 @@
 img{
-    height: 470px;
-    width: 480px;
-    margin-top: 15px;
+    max-height: 379px;
+    max-width: 379px;
+    min-height: 379px;
+    /* min-width: 379px; */
+    /* margin-top: 15px; */
 }
 button{
     width: 48%; height: 50px;
     font-size: 20px;
     border-radius: 6px;
-   margin-top: 230px;
+   /* margin-top: 230px; */
 
 
+}
+.slide{
+    border: 1px solid black;
+    display: inline-block;
 }

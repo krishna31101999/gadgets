@@ -21,6 +21,10 @@ import { CameraComponent } from './shop/camera/camera.component';
 import { FooterComponent } from './footer/footer.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+
 
 @NgModule({
   declarations: [
@@ -46,7 +50,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatSnackBarModule
+    // MatSnackBar
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,44 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div class="slide col-md-4" style="height: 380px; width: 380px; display: inline-block; ">
+            <ngb-carousel>
+                <ng-template ngbSlide>
+                    <img [src]="dis.set[0]" class="img-responsive">
+                </ng-template>
+                <ng-template ngbSlide>
 
-<div class="container-fluid">
-        <div class="col-sm-6" style="height: 500px; width: 500px; background-color: black;  margin-left: 20px;" >
-            <ngb-carousel >
-                <ng-template ngbSlide>
-                    <img [src]="dis.set[0]" class="img-responsive"
-                        >
+                    <img [src]="dis.set[1]" class="img-responsive">
                 </ng-template>
                 <ng-template ngbSlide>
-            
-                    <img [src]="dis.set[1]" class="img-responsive"
-                    >
+
+                    <img [src]="dis.set[2]" class="img-responsive">
                 </ng-template>
                 <ng-template ngbSlide>
-            
-                    <img [src]="dis.set[2]" class="img-responsive"
-                        >
+
+                    <img [src]="dis.set[3]" class="img-responsive">
                 </ng-template>
                 <ng-template ngbSlide>
-            
-                    <img [src]="dis.set[3]"class="img-responsive"
-                    >   
+                    <img [src]="dis.set[4]" class="img-responsive">
                 </ng-template>
-                <ng-template ngbSlide>
-                    <img [src]="dis.set[4]" class="img-responsive"
-                        >
-                </ng-template>
-            
+
             </ngb-carousel>
-            </div>
-            <div class="col-sm-6" style="padding-left: 20px;"><br><br>
-                <p style="font-size:x-large;  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">{{dis.title}}</p>
-          <br>  <p style="font-size: 50px; display: inline;" ><i class="fa fa-inr" aria-hidden="true" ></i>{{dis.price}}</p>
-          <p style="display: inline; text-decoration: line-through; font-size:30px ; padding-left: 20px; color: silver;"><i class="fa fa-inr" aria-hidden="true" ></i>{{dis.mrp}}</p>
-            <p style="font-size: 20px; padding-left: 20px;  display: inline;">({{dis.savings}})</p>
-        <!-- <br><br><br><br> -->
-        <button class="btn btn-success  mr-2" >Buy</button>
-        <button class="btn btn-warning  mb-2" (click)="addItem(dis)">Add to Cart</button>    
-        
         </div>
-           
+        <div class="col-md-8" style="padding-left: 20px; display: inline-block;"><br><br>
+            <p style="font-size:x-large;  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;" data-toggle="tooltip" title="{{dis.title}} ">
+                {{ (dis.title.length>50) ? (dis.title | slice:0:47) + "..." : (dis.title)}}</p>
+            <br>
+            <p style="font-size: 50px; display: inline;"><i class="fa fa-inr" aria-hidden="true"></i>{{dis.price}}</p>
+            <p
+                style="display: inline; text-decoration: line-through; font-size:30px ; padding-left: 20px; color: silver;">
+                <i class="fa fa-inr" aria-hidden="true"></i>{{dis.mrp}}</p>
+            <p style="font-size: 20px; padding-left: 20px;  display: inline;">({{dis.savings}})</p>
+            <br><br><br><br>
+            <button class="btn btn-success  mr-2">Buy</button>
+            <button class="btn btn-warning  mb-2" mat-button (click)="addItem(dis) " data-toggle="modal"
+                data-target="#myModal">Add to Cart</button>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                       
+                        <div class="modal-body row">
+                            <p class="mr-5" style="padding-left: 80px;padding-top: 10px;">Added to Cart</p>
+                      <p  class="ml-5 mt-2" data-dismiss="modal" style="text-align: right;padding-left: 120px;"> <a href="#" style="text-decoration: none;">Close</a> </p>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
 
         </div>
+    </div>
+
+
+</div>
+
+
 <app-footer></app-footer>
